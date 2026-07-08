@@ -1,0 +1,291 @@
+# Reviewed seed registry for EU AI legal RAG.
+# Keep this file under version control and review discovered links before adding them here.
+# Categories:
+# - primary_law: directly binding core legal acts
+# - ai_act_amended_act: legal acts explicitly amended by Regulation (EU) 2024/1689
+# - official_guidance: Commission/AI Office/EDPB guidance and interpretive pages
+# - standards: standardisation materials relevant to AI Act compliance
+# - adjacent_regulation: related EU digital, product, cyber, data and liability legislation
+
+sources:
+  - id: eu_ai_act_2024_1689
+    title: "Regulation (EU) 2024/1689 — Artificial Intelligence Act"
+    url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+    celex: "32024R1689"
+    category: primary_law
+    priority: 100
+    language: en
+    tags: [ai_act, artificial_intelligence, primary_law, risk_based_framework]
+
+  - id: gdpr_2016_679
+    title: "Regulation (EU) 2016/679 — General Data Protection Regulation"
+    url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+    celex: "32016R0679"
+    category: primary_law
+    priority: 95
+    language: en
+    tags: [gdpr, data_protection, privacy, automated_decision_making]
+
+  - id: eu_charter_fundamental_rights
+    title: "Charter of Fundamental Rights of the European Union"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012P/TXT"
+    celex: "12012P/TXT"
+    category: primary_law
+    priority: 90
+    language: en
+    tags: [fundamental_rights, charter, non_discrimination, privacy]
+
+  # Official AI Act / AI Office guidance and implementation materials.
+  - id: commission_ai_act_policy_page
+    title: "European Commission — AI Act policy and application timeline"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    category: official_guidance
+    priority: 88
+    language: en
+    tags: [ai_act, timeline, implementation, commission]
+
+  - id: european_ai_office
+    title: "European AI Office"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+    category: official_guidance
+    priority: 82
+    language: en
+    tags: [ai_office, implementation, supervision, gpai]
+
+  - id: gpai_code_of_practice
+    title: "General-Purpose AI Code of Practice"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+    category: official_guidance
+    priority: 85
+    language: en
+    tags: [gpai, code_of_practice, transparency, copyright, safety_security]
+
+  - id: prohibited_ai_practices_guidelines_2025
+    title: "Commission Guidelines on prohibited AI practices under Regulation (EU) 2024/1689"
+    url: "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF"
+    category: official_guidance
+    priority: 82
+    language: en
+    tags: [ai_act, article_5, prohibited_practices, guidelines]
+
+  - id: draft_high_risk_classification_guidelines_2026
+    title: "Draft Commission guidelines on classification of high-risk AI systems"
+    url: "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems"
+    category: official_guidance
+    priority: 78
+    language: en
+    tags: [ai_act, article_6, annex_iii, high_risk, draft_guidelines]
+
+  - id: edpb_artificial_intelligence_topic
+    title: "European Data Protection Board — Artificial Intelligence topic page"
+    url: "https://www.edpb.europa.eu/our-work-tools/our-documents/topic/artificial-intelligence_en"
+    category: official_guidance
+    priority: 78
+    language: en
+    tags: [edpb, ai, gdpr, data_protection]
+
+  - id: edpb_automated_decision_profiling_topic
+    title: "European Data Protection Board — Automated decision-making and profiling"
+    url: "https://www.edpb.europa.eu/our-work-tools/our-documents/topic/automated-decision-profiling_en"
+    category: official_guidance
+    priority: 76
+    language: en
+    tags: [edpb, gdpr, article_22, profiling, automated_decision_making]
+
+  # AI Act standardisation materials.
+  - id: commission_ai_act_standardisation
+    title: "European Commission — Standardisation of the AI Act"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation"
+    category: standards
+    priority: 80
+    language: en
+    tags: [ai_act, harmonised_standards, cen, cenelec, conformity_assessment]
+
+  - id: enorm_m613_ai_standardisation_request
+    title: "M/613 — Standardisation request on Artificial Intelligence"
+    url: "https://ec.europa.eu/growth/tools-databases/enorm/mandate/613_en"
+    category: standards
+    priority: 78
+    language: en
+    tags: [m_613, standards, cen, cenelec, etsi, ai_act]
+
+  - id: cen_cenelec_ai_topic
+    title: "CEN-CENELEC — Artificial Intelligence"
+    url: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/"
+    category: standards
+    priority: 70
+    language: en
+    tags: [standards, cen, cenelec, jtc_21, ai_act]
+
+  # Legal acts explicitly amended by Regulation (EU) 2024/1689.
+  - id: reg_2008_300_aviation_security
+    title: "Regulation (EC) No 300/2008 — civil aviation security"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R0300"
+    celex: "32008R0300"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, aviation_security]
+
+  - id: reg_2013_167_agricultural_vehicles
+    title: "Regulation (EU) No 167/2013 — agricultural and forestry vehicles"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0167"
+    celex: "32013R0167"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, vehicles, agriculture]
+
+  - id: reg_2013_168_two_three_wheel_vehicles
+    title: "Regulation (EU) No 168/2013 — two- or three-wheel vehicles and quadricycles"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0168"
+    celex: "32013R0168"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, vehicles]
+
+  - id: reg_2018_858_motor_vehicles
+    title: "Regulation (EU) 2018/858 — motor vehicles type-approval and market surveillance"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R0858"
+    celex: "32018R0858"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, motor_vehicles, market_surveillance]
+
+  - id: reg_2018_1139_civil_aviation_safety
+    title: "Regulation (EU) 2018/1139 — civil aviation safety and EASA"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1139"
+    celex: "32018R1139"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, civil_aviation, easa]
+
+  - id: reg_2019_2144_vehicle_general_safety
+    title: "Regulation (EU) 2019/2144 — general safety of motor vehicles"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2144"
+    celex: "32019R2144"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, vehicles, safety]
+
+  - id: dir_2014_90_marine_equipment
+    title: "Directive 2014/90/EU — marine equipment"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0090"
+    celex: "32014L0090"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, marine_equipment]
+
+  - id: dir_2016_797_railway_interoperability
+    title: "Directive (EU) 2016/797 — interoperability of the rail system"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L0797"
+    celex: "32016L0797"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, railway, interoperability]
+
+  - id: dir_2020_1828_representative_actions
+    title: "Directive (EU) 2020/1828 — representative actions for consumer interests"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020L1828"
+    celex: "32020L1828"
+    category: ai_act_amended_act
+    priority: 65
+    language: en
+    tags: [amended_by_ai_act, consumer_protection, representative_actions]
+
+  # Adjacent EU legislation often triggered in AI compliance assessments.
+  - id: dsa_2022_2065
+    title: "Regulation (EU) 2022/2065 — Digital Services Act"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2065"
+    celex: "32022R2065"
+    category: adjacent_regulation
+    priority: 62
+    language: en
+    tags: [dsa, digital_services, recommender_systems, platforms]
+
+  - id: data_act_2023_2854
+    title: "Regulation (EU) 2023/2854 — Data Act"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2854"
+    celex: "32023R2854"
+    category: adjacent_regulation
+    priority: 62
+    language: en
+    tags: [data_act, data_access, cloud_switching]
+
+  - id: data_governance_act_2022_868
+    title: "Regulation (EU) 2022/868 — Data Governance Act"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868"
+    celex: "32022R0868"
+    category: adjacent_regulation
+    priority: 60
+    language: en
+    tags: [data_governance_act, data_intermediaries]
+
+  - id: nis2_2022_2555
+    title: "Directive (EU) 2022/2555 — NIS2 Directive"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555"
+    celex: "32022L2555"
+    category: adjacent_regulation
+    priority: 60
+    language: en
+    tags: [nis2, cybersecurity, critical_entities]
+
+  - id: cyber_resilience_act_2024_2847
+    title: "Regulation (EU) 2024/2847 — Cyber Resilience Act"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2847"
+    celex: "32024R2847"
+    category: adjacent_regulation
+    priority: 60
+    language: en
+    tags: [cyber_resilience_act, cybersecurity, products_with_digital_elements]
+
+  - id: product_liability_directive_2024_2853
+    title: "Directive (EU) 2024/2853 — liability for defective products"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L2853"
+    celex: "32024L2853"
+    category: adjacent_regulation
+    priority: 58
+    language: en
+    tags: [product_liability, defective_products, ai_liability]
+
+  - id: machinery_regulation_2023_1230
+    title: "Regulation (EU) 2023/1230 — machinery"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1230"
+    celex: "32023R1230"
+    category: adjacent_regulation
+    priority: 58
+    language: en
+    tags: [machinery, safety_component, high_risk_ai]
+
+  - id: medical_devices_regulation_2017_745
+    title: "Regulation (EU) 2017/745 — medical devices"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0745"
+    celex: "32017R0745"
+    category: adjacent_regulation
+    priority: 58
+    language: en
+    tags: [medical_devices, safety_component, high_risk_ai]
+
+  - id: ivd_regulation_2017_746
+    title: "Regulation (EU) 2017/746 — in vitro diagnostic medical devices"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0746"
+    celex: "32017R0746"
+    category: adjacent_regulation
+    priority: 58
+    language: en
+    tags: [ivd, medical_devices, diagnostics, high_risk_ai]
+
+  - id: general_product_safety_2023_988
+    title: "Regulation (EU) 2023/988 — general product safety"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0988"
+    celex: "32023R0988"
+    category: adjacent_regulation
+    priority: 55
+    language: en
+    tags: [product_safety, consumer_products]

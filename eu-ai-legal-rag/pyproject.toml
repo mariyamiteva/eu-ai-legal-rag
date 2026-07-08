@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eu-ai-legal-rag"
+version = "0.1.0"
+description = "RAG architecture for EU AI Act, GDPR and related official EU documents"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
